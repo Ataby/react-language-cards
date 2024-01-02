@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// yarn add react-bootstrap bootstrap" ve REACT BOOTST. SAYFASINDAN CSS IMPORT ETMEK, BOOTSTRAP KODU YAZMAK ICIN YAPILMALI
+
+import Header from './components/Header';
+import Cards from './components/Cards';
+import Container  from "react-bootstrap/Container";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container className='text-center p-4'>
+      <Header/>
+      <Cards/>      
+    </Container>
   );
 }
 
