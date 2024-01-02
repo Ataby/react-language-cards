@@ -9,6 +9,7 @@ import   Col   from "react-bootstrap/Col";
 import {data} from "../assets/data";
 //'EXPORT DEFAULT' YOKSA, SADECE'EXPORT' VARSA SUSLU PARANTEZ ILE ALINIR 
 
+
  
 const Cards = () => {
 console.log(data);
@@ -21,7 +22,7 @@ console.log(data);
         <h1 className="">PROGRAMMING LANGUAGES</h1>
           {data.map((item,index)=>{
           return (
-            <Col className="mt-3" sm={6} md={4} lg={3} >
+            <Col className="mt-3 " sm={6} md={4} lg={3} >
               <Languages name={item.name} img={item.img} options={item.options} key={index} /> 
              {/* LANGUAGE ELEMENTINI, MAP ADEDI KADAR BASTIRDIK
              <Languages {...Languages}/> */}
